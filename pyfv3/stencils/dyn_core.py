@@ -204,7 +204,7 @@ def dyncore_temporaries(
     quantity_factory: QuantityFactory,
 ) -> Mapping[str, Quantity]:
     temporaries: Dict[str, Quantity] = {}
-    for name in ["ut", "vt", "gz", "zh", "pem", "pkc", "pk3", "heat_source", "cappa"]:
+    for name in ["ut", "vt", "pem", "pk3", "heat_source", "cappa"]:
         # TODO: the dimensions of ut and vt may not be correct,
         #       because they are not used. double-check and correct as needed.
         temporaries[name] = quantity_factory.zeros(
