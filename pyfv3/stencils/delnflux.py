@@ -28,6 +28,7 @@ def calc_damp(damp_c: Quantity, da_min: Float, nord: Quantity) -> Quantity:
         origin=damp_c.origin,
         extent=damp_c.extent,
         gt4py_backend=damp_c.gt4py_backend,
+        number_of_halo_points=damp_c.metadata.n_halo,
     )
 
 
